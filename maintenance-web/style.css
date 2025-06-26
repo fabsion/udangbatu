@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    /* Menggunakan warna #D4C9BE sebagai background utama body */
+    background-color: #D4C9BE; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 580px;
+    width: 380px;
+    position: relative;
+    margin: auto;
+    /* Background container diatur ke putih pucat */
+    background: #F1EFEC; 
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3); /* Bayangan sedikit disesuaikan */
+}
+
+.form-box {
+    width: 340px;
+    height: 480px;
+    position: relative;
+    margin: 60px auto;
+    /* Background form-box tetap putih pucat agar serasi dengan container */
+    background: #F1EFEC; 
+    padding: 10px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    /* Box shadow diubah ke warna biru tua dengan opasitas */
+    box-shadow: 0 0 20px 9px rgba(18, 52, 88, 0.2); 
+    border-radius: 30px;
+    display: flex;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    flex: 1;
+    /* Warna teks tombol diatur ke hitam pekat atau biru tua */
+    color: #030303; 
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    /* Gradient slider menggunakan biru tua dan krem kecoklatan */
+    background: linear-gradient(to right, #123458, #D4C9BE); 
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+    left: 50px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    /* Border bottom menggunakan warna hitam pekat atau biru tua */
+    border-bottom: 1px solid #123458; 
+    outline: none;
+    background: transparent;
+    /* Warna teks input field */
+    color: #030303;
+}
+
+/* Placeholder color */
+.input-field::placeholder {
+    color: #030303; /* Warna placeholder */
+    opacity: 0.7; /* Sedikit transparan */
+}
+
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    /* Background tombol submit menggunakan gradien biru tua dan krem kecoklatan */
+    background: linear-gradient(to right, #123458, #D4C9BE); 
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: #F1EFEC; /* Warna teks tombol submit diatur ke putih pucat */
+    margin-top: 30px;
+}
+
+#login {
+    left: 50px;
+}
+
+#signup {
+    left: 450px;
+}
+
+/* Optional: Hover effect for buttons */
+.toggle-btn:hover {
+    color: #123458; /* Warna teks berubah saat hover */
+}
+
+.submit-btn:hover {
+    opacity: 0.9; /* Sedikit transparan saat hover */
+}
